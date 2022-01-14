@@ -16,14 +16,19 @@ def list_uniqueness(the_list):
     # Do not change the code before this
 
     # CODE1: Write code that will create the required dictionary
-    def dictionary(the_list):
-        the_list = {"list_length": 2342, "unique_items": [38, 23, 0]}
+
+    the_list_temp = the_list
+    list_length = len(the_list_temp)
+    unique_items2 = set(the_list_temp) # need to find how to get the unique items
+    unique_items = len(unique_items2)
+
+    dictionary = {"list_length" : list_length , "unique_items":unique_items}
 
 
-# ====================================
-# Do not change the code after this
+    # ====================================
+    # Do not change the code after this
 
-return dictionary
+    return dictionary
 
 if __name__ == '__main__':
     l = [1, 2, 2, 4]
